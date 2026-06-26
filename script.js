@@ -67,11 +67,12 @@ function iniciarObserver() {
 document.getElementById("btnEmail").addEventListener("click", () => {
   navigator.clipboard.writeText("fredeystevn97@gmail.com").then(() => {
     const tooltip = document.getElementById("tooltipEmail");
-    
-    tooltip.classList.remove("oculto");
+
+   
+    tooltip.classList.add("visible");
 
     setTimeout(() => {
-      tooltip.classList.add("oculto");
+      tooltip.classList.remove("visible");
     }, 2000);
   });
 });

@@ -621,15 +621,21 @@ header {
 }
 
 .tooltip-email {
-  position: absolute;
+  position: fixed;
   background: var(--accent-primary);
   color: #0A0E1A;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 8px;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 80px;
+  right: 20px;
   white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.tooltip-email.visible {
+  opacity: 1;
 }
