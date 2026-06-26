@@ -602,3 +602,34 @@ header {
   font-size: 0.85rem;
   color: var(--text-soft);
 }
+
+.btn-email {
+  background: none;
+  border: none;
+  color: var(--text-soft);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.btn-email:hover {
+  color: var(--accent-primary);
+  transform: translateY(-3px);
+}
+
+.tooltip-email {
+  position: absolute;
+  background: var(--accent-primary);
+  color: #0A0E1A;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
